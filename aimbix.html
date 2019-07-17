@@ -6,229 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    html,
-    body {
-      font-family: 'Hind', sans-serif;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-
-    header {
-      background-color: #1c4dce;
-      color: #fff;
-      padding-bottom: 240px;
-    }
-
-    .top-level {
-      padding: 15px 0;
-      border-bottom: 1px solid #2d5cd2;
-    }
-
-    .top-level .container {
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .top-level h1 {
-      font-weight: bold;
-      margin-bottom: 0;
-    }
-
-    .top-level .call-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .top-level .call-info .meta {
-      color: #9faee5;
-      font-size: 13px;
-    }
-
-    nav.menu {
-      padding: 15px 0;
-    }
-
-    nav.menu .container {
-      justify-content: flex-end;
-    }
-
-    nav.menu ul {
-      margin-bottom: 0;
-    }
-
-    nav.menu li {
-      padding: 0 21px;
-      border-left: 1px solid #5278db;
-    }
-
-    nav.menu li span.text {
-      display: block;
-      text-transform: uppercase;
-    }
-
-    nav.menu li span.meta {
-      color: #9faee5;
-      font-size: 13px;
-    }
-
-    .sticky-menu {
-      background-color: #fff;
-      color: #000;
-      padding: 15px 0;
-    }
-
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 9000;
-    }
-
-    .sticky-menu .container-fluid {
-      justify-content: space-between;
-    }
-
-    .sticky-menu h1 {
-      font-weight: bold;
-      margin-bottom: 0;
-    }
-
-    .sticky-menu ul {
-      margin-bottom: 0;
-    }
-
-    .sticky-menu li {
-      padding: 0 21px;
-      border-left: 1px solid #ededed;
-    }
-
-    .sticky-menu li span.text {
-      display: block;
-      text-transform: uppercase;
-    }
-
-    .sticky-menu li span.meta {
-      color: #b8b8b8;
-      font-size: 13px;
-    }
-
-    main>div {
-      padding: 42px 0;
-    }
-
-    .why-choose-us {
-      padding: 42px 0;
-      text-align: center;
-    }
-
-    .why-choose-us h3 {
-      color: #0e40c9;
-      font-weight: bold;
-    }
-
-    .why-choose-us ul {
-      justify-content: center;
-    }
-
-    .aimbix-info {
-      padding: 42px 0;
-      background-color: #f4f5f9;
-      color: #6b6c6e;
-    }
-
-    .aimbix-info h3,
-    .aimbix-info h6 {
-      color: #0e40c9;
-      font-weight: bold;
-    }
-
-    .aimbix-info h6 {
-      text-transform: uppercase;
-    }
-
-    .expertise {
-      background-color: #1c4dce;
-      color: #fff;
-    }
-
-    .expertise h3 {
-      font-weight: bold;
-    }
-
-    .expertise p {
-      font-size: 13px;
-      margin-bottom: 24px;
-    }
-
-    .expertise .col-3 {
-      font-size: 14px;
-    }
-
-    .aimbix-partner {
-      background-color: #f4f5f9;
-      text-align: center;
-    }
-    .aimbix-partner h3,
-    .aimbix-global h3 {
-      color: #0e40c9;
-      font-weight: bold; 
-    }
-
-    .aimbix-global {
-      text-align: center;
-    }
-
-    footer {
-      background-color: #051630;
-      color: #fff;
-      padding-bottom: 21px;
-    }
-    .footer1 {
-      align-items: center;
-      padding-top: 21px;
-      padding-bottom: 21px;
-      justify-content: space-between;
-    }
-    .footer1 h2 {
-      font-weight: bold;
-    }
-    .footer-meta {
-      font-size: 14px;
-    }
-    .copyright {
-      background-color: #051630;
-      color: #fff;
-      font-size: 12px;
-      text-align: center;
-      padding: 15px 0;
-      border-top: 1px solid #1c4dce;
-    }
-	.partners{
-	width:90%;
-	padding:20px;
-	}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <nav class="top-level">
+    <nav id="sticky-nav">
       <div class="container d-flex">
         <a class="navbar-brand" href="#">
           <img src="Aimbix_Logo_White.png" alt="">
@@ -239,29 +26,73 @@
         </div>
       </div>
     </nav>
-    <nav class="menu">
-      <div class="container d-flex">
-        <ul class="list-unstyled list-inline">
-          <li class="list-inline-item">
-            <span class="text">Corporate</span>
-            <span class="meta">About Us</span>
+    <div class="carousel-wrapper">
+      <nav class="menu">
+        <div class="container d-flex">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <span class="text">Corporate</span>
+              <span class="meta">About Us</span>
+            </li>
+            <li class="list-inline-item">
+              <span class="text">We offer</span>
+              <span class="meta">Our Services</span>
+            </li>
+            <li class="list-inline-item">
+              <span class="text">News</span>
+              <span class="meta">Latest on us</span>
+            </li>
+            <li class="list-inline-item">
+              <span class="text">Contact</span>
+              <span class="meta">Getting in touch</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="main-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            First carousel
+          </div>
+          <div class="carousel-item">
+            Second Carousel
+          </div>
+          <div class="carousel-item">
+            Third Image
+          </div>
+          <div class="carousel-item">
+            Four Carousel
+          </div>
+          <div class="carousel-item">
+            FiveF Image
+          </div>
+        </div>
+      </div>
+      <div class="main-carousel-indicators">
+        <ul class="list-unstyled">
+          <li class="active">
+            I & A Mgmt
+            <div class="divider" />
           </li>
-          <li class="list-inline-item">
-            <span class="text">We offer</span>
-            <span class="meta">Our Services</span>
+          <li class="">
+            Anti Virus Protection
+            <div class="divider" />
           </li>
-          <li class="list-inline-item">
-            <span class="text">News</span>
-            <span class="meta">Latest on us</span>
+          <li class="">
+            Information Security
+            <div class="divider" />
           </li>
-          <li class="list-inline-item">
-            <span class="text">Contact</span>
-            <span class="meta">Getting in touch</span>
+          <li class="">
+            Cloud Services
+            <div class="divider" />
+          </li>
+          <li class="">
+            Anti virus
           </li>
         </ul>
       </div>
-    </nav>
-    <nav id="sticky-navbar" class="sticky-menu">
+    </div>
+    <!-- <nav class="sticky-menu">
       <div class="container-fluid d-flex">
         <h1 class="aimbix-logo">AIMBIX</h1>
         <ul class="list-unstyled list-inline">
@@ -283,25 +114,27 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
   </header>
   <main>
     <div class="why-choose-us container">
       <h3>Why Choose Us</h3>
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-            aria-controls="pills-home" aria-selected="true">Customer Centricity</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-            aria-controls="pills-profile" aria-selected="false">Service Excellence</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-            aria-controls="pills-contact" aria-selected="false">Best Affordability</a>
-        </li>
-      </ul>
+      <div class="radiohead-tabs">
+        <ul class="nav mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+              aria-controls="pills-home" aria-selected="true">Customer Centricity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+              aria-controls="pills-profile" aria-selected="false">Service Excellence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+              aria-controls="pills-contact" aria-selected="false">Best Affordability</a>
+          </li>
+        </ul>
+      </div>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -362,9 +195,12 @@
     </div>
     <div class="expertise">
       <div class="container">
-        <div class="col-6"><h3>We at AIMBIX provide our expertise in Microsoft exosystem.</h3>
-        <p>We are operating at AIMBIX(AimBix.com). The expertise we have in place were gained by working with different
-          partner companies. Our team had deployed most of Major Projects in the following areas.</p></div>
+        <div class="col-6">
+          <h3>We at AIMBIX provide our expertise in Microsoft exosystem.</h3>
+          <p>We are operating at AIMBIX(AimBix.com). The expertise we have in place were gained by working with
+            different
+            partner companies. Our team had deployed most of Major Projects in the following areas.</p>
+        </div>
         <div class="row">
           <div class="col-3">
             <img src="logo8.png" class="partners"></img>
@@ -386,7 +222,7 @@
     <div class="aimbix-partner">
       <div class="container">
         <h3>Aimbix's Partners</h3>
-       <div class="row">
+        <div class="row">
           <div class="col-3">
             <img src="image/logo8.png" class="partners"></img>
           </div>
@@ -402,17 +238,19 @@
           <div class="col-3"><img src="image/logo2.png" class="partners"></img></div>
           <div class="col-3"><img src="image/logo1.png" class="partners"></img></div>
         </div>
-	  </div>
+      </div>
     </div>
     <div class="aimbix-global">
       <div class="container">
         <h3>Aimbix's Global Coverage</h3>
-		<div class="row">
-		<div class="col-6">
-		<p style="margin-top:30%">Our experience shows that driver behaviour can substantially effect vehicle fuel economy and emissions.</p>
-		</div><div class="col-6">
-		<img src="image/8450_2.jpg" style="width:100%"></div>
-		</div>
+        <div class="row">
+          <div class="col-6">
+            <p style="margin-top:30%">Our experience shows that driver behaviour can substantially effect vehicle fuel
+              economy and emissions.</p>
+          </div>
+          <div class="col-6">
+            <img src="image/8450_2.jpg" style="width:100%"></div>
+        </div>
       </div>
     </div>
   </main>
@@ -453,7 +291,7 @@
     </div>
   </footer>
   <div class="copyright">
-      Copyright 2016 Aimbix. All rights reserved.
+    Copyright 2016 Aimbix. All rights reserved.
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -469,7 +307,8 @@
     window.onscroll = function () { myFunction() };
 
     // Get the navbar
-    var navbar = document.getElementById("sticky-navbar");
+    var navbar = document.getElementById("sticky-nav");
+
 
     // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
@@ -477,11 +316,23 @@
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
       if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
       } else {
         navbar.classList.remove("sticky");
       }
     } 
+
+
+    $('#main-carousel').on('slide.bs.carousel', function (event) {
+      var to = event.to;
+      var from = event.from;
+       $('.main-carousel-indicators li').eq(from).removeClass('active');
+      $('.main-carousel-indicators li').eq(to).addClass('active');
+    });
+
+    $('.main-carousel-indicators li').click(function(e) {
+      $("#main-carousel").carousel($(this).index());
+    });
   </script>
 </body>
 
